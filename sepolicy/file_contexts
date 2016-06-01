@@ -52,3 +52,6 @@
 
 # wdf
 /vendor/lib64/libmmrtpencoder.so                          u:object_r:vendor_file:s0
+
+# Persist
+/persist/PRSensorData\.txt                                u:object_r:sensors_persist_file:s0

@@ -1,1 +1,3 @@
 allow init fingerprintd_device:chr_file setattr;
+allow init btnvtool_exec:file execute;
+allow init vendor_file:file execute;

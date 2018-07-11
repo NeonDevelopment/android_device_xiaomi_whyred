@@ -1,1 +1,1 @@
-allow thermal-engine sysfs_uio:dir read;
+allow thermal-engine sysfs_uio:dir { open read };

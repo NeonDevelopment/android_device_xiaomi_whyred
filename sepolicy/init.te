@@ -1,3 +1,7 @@
 allow init fingerprintd_device:chr_file setattr;
 allow init btnvtool_exec:file execute;
-allow init vendor_file:file execute;
+allow init ipa_dev:chr_file { open };
+allow init hwservicemanager:binder { transfer call };
+allow init pmsg_device:chr_file { open };
+allow init property_socket:sock_file { write };
+allow init socket_device:sock_file { create setattr write };

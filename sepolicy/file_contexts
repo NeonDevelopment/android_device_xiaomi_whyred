@@ -40,6 +40,14 @@
 # Power
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.1-service-qti      u:object_r:hal_power_default_exec:s0
 
-# Proc
-/proc/modules                                                 u:object_r:proc_modules:s0
-/proc/interrupts                                              u:object_r:proc_interrupts:s0
+# Sys
+/sys/kernel/debug/wlan0/power_stats                       u:object_r:debugfs:s0
+
+# Block
+/dev/block/mmcblk0p63                                     u:object_r:block_device:s0
+
+# Factory
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.factory@1\.0-service    u:object_r:vendor_file:s0
+
+# Vendor
+/vendor/bin/btnvtool                                      u:object_r:btnvtool_exec:s0

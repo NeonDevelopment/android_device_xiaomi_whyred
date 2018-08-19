@@ -118,10 +118,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.0-impl
 
-#Tether
-PRODUCT_PACKAGES += \
-    android.hardware.tetheroffload.control@1.0
-
 #Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660

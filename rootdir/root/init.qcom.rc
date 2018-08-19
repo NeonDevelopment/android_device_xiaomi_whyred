@@ -426,6 +426,14 @@ on post-fs-data
     #Create FTM_AP dir for factory test
     mkdir /data/FTM_AP 0775 system system
 
+# logcat to sdcard
+    chmod 0775 /vendor/bin/loggy.sh
+
+service loggy /vendor/bin/sh /vendor/bin/loggy.sh
+   class core
+   user root
+   oneshot
+
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc

@@ -261,6 +261,7 @@ PRODUCT_PACKAGES += \
     init.qti.fm.sh \
     init.qti.ims.sh \
     init.goodix.sh \
+    loggy.sh \
     ueventd.rc
 
 PRODUCT_COPY_FILES += \

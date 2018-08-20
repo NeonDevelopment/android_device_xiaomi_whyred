@@ -44,6 +44,7 @@ TARGET_USES_QCOM_BSP := false
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=1 androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -79,7 +80,7 @@ TARGET_QCOM_DISPLAY_VARIANT := caf-msm8998
 BOARD_USES_ALSA_AUDIO := true
 
 BOARD_USES_SRS_TRUEMEDIA := false
-BOARD_SUPPORTS_SOUND_TRIGGER := true
+#BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_SUPPORTS_QAHW := true
 
 AUDIO_FEATURE_ENABLED_COMPRESS_CAPTURE := false
@@ -131,7 +132,7 @@ DTS_CODEC_M_ := false
 
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 
-USE_CUSTOM_AUDIO_POLICY := 1
+#USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 #Tap to wake
@@ -193,9 +194,9 @@ WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-include vendor/omni/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#include device/qcom/sepolicy/sepolicy.mk
+#include vendor/omni/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # RIL
 PROTOBUF_SUPPORTED := true
@@ -204,10 +205,10 @@ PROTOBUF_SUPPORTED := true
 BOARD_USES_QC_TIME_SERVICES := true
 
 #FM
-BOARD_HAVE_QCOM_FM := true
-BOARD_HAS_QCA_FM_SOC := "cherokee"
-BOARD_HAVE_FM_RADIO := true
-BOARD_DISABLE_FMRADIO_LIBJNI := true
+#BOARD_HAVE_QCOM_FM := true
+#BOARD_HAS_QCA_FM_SOC := "cherokee"
+#BOARD_HAVE_FM_RADIO := true
+#BOARD_DISABLE_FMRADIO_LIBJNI := true
 
 # GPS
 TARGET_NO_RPC := true

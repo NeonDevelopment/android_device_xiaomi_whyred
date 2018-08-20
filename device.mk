@@ -188,9 +188,6 @@ PRODUCT_PACKAGES += \
     telephony-ext \
     ims-ext-common
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # GPS
 PRODUCT_PACKAGES += \
     gps.sdm660 \
@@ -238,7 +235,7 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 #FM
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     FMRadio \
     libqcomfm_jni
 

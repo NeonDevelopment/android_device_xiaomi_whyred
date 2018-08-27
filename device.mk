@@ -184,9 +184,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2 \
-    libprotobuf-cpp-full \
-    telephony-ext \
-    ims-ext-common
+    libprotobuf-cpp-full
 
 # GPS
 PRODUCT_PACKAGES += \

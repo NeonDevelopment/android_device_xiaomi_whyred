@@ -198,12 +198,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 #include vendor/omni/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
-# RIL
-PROTOBUF_SUPPORTED := true
-
-# QCOM TIME SERVICES
-BOARD_USES_QC_TIME_SERVICES := true
-
 #FM
 #BOARD_HAVE_QCOM_FM := true
 #BOARD_HAS_QCA_FM_SOC := "cherokee"
@@ -221,12 +215,6 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
-
-# Power
-TARGET_POWERHAL_VARIANT := qcom
-
-# Keymaster
-TARGET_PROVIDES_KEYMASTER := true
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true

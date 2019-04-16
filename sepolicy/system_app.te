@@ -1,2 +1,0 @@
-add_service(system_app, goodix_fingerprint_service)
-allow system_app wificond:binder call;

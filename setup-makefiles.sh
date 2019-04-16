@@ -22,7 +22,6 @@ set -e
 INITIAL_COPYRIGHT_YEAR=2018
 export DEVICE=whyred
 export VENDOR=xiaomi
-export TREBLE_COMPATIBLE=1
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -44,7 +43,7 @@ setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" true
 write_headers "whyred"
 
 # The standard common blobs
-write_makefiles "$MY_DIR"/proprietary-files.txt 1
+write_makefiles "$MY_DIR"/proprietary-files.txt true
 
 # Finish
 write_footers

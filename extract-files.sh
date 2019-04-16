@@ -21,7 +21,6 @@ set -e
 
 export DEVICE=whyred
 export VENDOR=xiaomi
-export TREBLE_COMPATIBLE=1
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

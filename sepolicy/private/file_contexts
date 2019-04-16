@@ -1,0 +1,11 @@
+# Media
+/system/etc/media_profiles_vendor.xml    u:object_r:vendor_configs_file:s0
+
+# Light
+/system/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sdm660		u:object_r:hal_light_sdm660_exec:s0
+
+# BT
+/vendor/bin/btnvtool			 u:object_r:btnvtool_exec:s0
+
+#  Misc
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@2\.0-service			u:object_r:vendor_file:s0
